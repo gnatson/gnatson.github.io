@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚫ gnatson</title>
+</head>
+
+<body>
+    <div class="text">⚫ gnatson</div>
+</body>
+
+</html>
+
+<style>
+    body {
+        font-family: 'Comfortaa';
+
+        height: 100vh;
+        overflow: hidden;
+
+        padding: 0px;
+        margin: 0px;
+
+        background-color: rgba(0, 0, 0, 0.801);
+        color: white;
+    }
+
+    .wallpaper {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.4;
+    }
+
+    .text {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        font-size: calc(6vh);
+        font-weight: bold;
+        animation: 0.2s unpixelate;
+        display: flex;
+        user-select: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes unpixelate {
+        from {
+            filter: blur(5px);
+            transform: translateY(5vh);
+        }
+    }
+</style>
